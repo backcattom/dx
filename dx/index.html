@@ -8,9 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body>
-<div class="top container-fluid">
+<!-- <div class="top container-fluid">
 	<div class="row">
 		<h1 class="col-md-3 col-md-offset-1"><img src="img/logo.png"></h1>
 		<div class="search col-md-3">
@@ -23,13 +25,23 @@
 	<ul class="row">
 		<li class="on col-md-1 col-xs-3  col-md-offset-1"><a>首页</a></li><li class="col-md-1 col-xs-3"><a>主题餐厅</a></li><li class="col-md-1 col-xs-3"><a>特色餐厅</a></li><li class="col-md-1 col-xs-3"><a>中餐厅</a></li><li class="col-md-1 col-xs-3"><a>快餐厅</a></li><li class="col-md-1 col-xs-3"><a>轻餐饮</a></li><li class="col-md-1 col-xs-3"><a>关于我们</a></li><li class="col-md-1 col-sm-3"><a>联系我们</a></li>
 	</ul>
-</div>
-<div class="banner container-fluid">
+</div> -->
+<div class="banner">
+	<div class="hd">
+		<ul>
+			<li>1111</li>
+			<li>2222</li>
+			<li>3333</li>
+		</ul>
+	</div>
+	<div class="bd">
 	<ul>
-		<li class="banner-li-one"></li>
-	</ul>
+		<li class="banner-li-one"><img src="http://res.a.cifoo.com/2016/alicall/img/banner0.jpg" style="width:100%;"></li>
+		<li class="banner-li-one"><img src="http://res.a.cifoo.com/2016/alicall/img/banner0.jpg" style="width:100%;"></li>
+		<li class="banner-li-one"><img src="http://res.a.cifoo.com/2016/alicall/img/banner0.jpg" style="width:100%;"></li>
+	</ul></div>
 </div>
-<div class="pro container-fluid">
+<!-- <div class="pro container-fluid">
 	<div>
 	<h2><img src="img/case_ti.png"></h2>
 	<ul>
@@ -89,6 +101,12 @@
 			</p>
 		</div>
 	</div>
-</div>
+</div> -->
+<script type="text/javascript">
+$(function(){
+	$(".banner").slide({mainCell:".bd ul",effect:"left",autoPlay:false});
+})
+	
+</script>
 </body>
 </html>
